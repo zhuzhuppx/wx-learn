@@ -1,0 +1,8 @@
+<import src="../movie/movie.wxml" />
+<template name="movieGridTemplate">
+  <view class="grid-container">
+    <template is="movieTemplate"/>
+    <template is="movieTemplate"/>
+    <template is="movieTemplate"/>
+  </view>
+</template>

@@ -1,0 +1,17 @@
+<import src="../templates/postsItem/postsItem" />
+<view>
+  <swiper autoplay="true" indicator-dots="true" interval="2000">
+    <block wx:for="{{posts_content}}" wx-for-item="item" wx:key="unique">
+      <swiper-item catchtap="onSwiperItemTap" data-post-id="{{item.postId}}">
+        <image src="{{item.imgSrc}}"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="post-container">
+    <block wx:for="{{posts_content}}" wx:for-item="item" wx:key="unique">
+      <view catchtap="itemTab" data-post-id="{{item.postId}}">
+        <template is="postsItem" data="{{...item}}" />
+      </view>
+    </block>
+  </view>
+</view>

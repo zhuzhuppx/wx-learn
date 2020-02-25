@@ -1,0 +1,16 @@
+<template name="postsItem">
+  <view class="post-item">
+    <view class="post-item-data">
+      <image src="{{avatar}}"></image>
+      <text>{{date}}</text>
+    </view>
+    <image class="post-item-img" src="{{imgSrc}}"></image>
+    <text class="post-item-txt">{{content}}</text>
+    <view class="post-item-feedback">
+      <image src="/images/icon/chat.png"></image>
+      <text>{{collection}}</text>
+      <image src="/images/icon/view.png"></image>
+      <text>{{reading}}</text>
+    </view>
+  </view>
+</template>
